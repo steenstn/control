@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView 
+        android:id="@+id/textViewServerResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server response:"/>
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:onClick="sendCommand"
+        android:text="Pause/Play" />
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonPause"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="29dp"
+        android:onClick="sendCommand"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonBack"
+        android:layout_alignBottom="@+id/buttonBack"
+        android:layout_toRightOf="@+id/buttonPause"
+        android:onClick="sendCommand"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/buttonVolumeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="sendCommand"
+        android:text="Vol up" />
+
+    <Button
+        android:id="@+id/buttonVolumeDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonVolumeUp"
+        android:layout_below="@+id/buttonVolumeUp"
+        android:onClick="sendCommand"
+        android:text="Vol dn" />
+
+</RelativeLayout>
