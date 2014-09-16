@@ -1,4 +1,6 @@
 bin/
+EchoAndroid/bin
+EchoAndroid/gen
 .project
 .classpath
 .settings
